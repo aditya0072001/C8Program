@@ -3,6 +3,7 @@
 #include"Algebra.c"
 #include"mesuration.c"
 #include"trigometry.c"
+#include"arithmetic.c"
  int main()
  {
      int choice,choice2,a,b,c;
