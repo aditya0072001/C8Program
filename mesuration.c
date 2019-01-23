@@ -8,7 +8,7 @@ int arearectangle(int l,int b)
 
 int perimeterrectangle(int l,int b)
 {
-    return 2+(l*b);
+    return 2*(l+b);
 }
 
 int areasquare(int s)
