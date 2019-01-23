@@ -6,24 +6,24 @@
  int main()
  {
      int choice,choice2,a,b,c;
-     int l,b; 
-     int rarea,rperimeter;
-     int sqside,sarea,sperimeter;
-     int srhombus,d1rhombus,d2rhombus;
-     int rharea,rhperimeter;
+     int l,b; //Length and breath of rectangle
+     int rarea,rperimeter;  //rectangle area and perimeter
+     int sqside,sarea,sperimeter;   //square side,area and perimeter
+     int srhombus,d1rhombus,d2rhombus;  //Rhombus side digonals
+     int rharea,rhperimeter;    //Rhombus area and perimeter
 
      printf("\n1.Algebra\n2.Trignometry\n3.Mesuration");
      choice=getche();
 
      switch(choice)
      {
-         case '1':
+         case '1':  //Declared in algebra.c
             printf("");
           break;
-         case '2':
+         case '2': //Declared in trigonmetry.c
 
           break;
-         case '3':
+         case '3': //Declared in mesuration.c
             printf("\nA.RectangleOperations\nB.SquareOperations\nC.RhombusOperations");
             choice2=getche();
                 switch(choice2)
