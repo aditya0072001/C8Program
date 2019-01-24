@@ -34,7 +34,7 @@
          case '1':  //Declared in algebra.c
             printf("\na.Square of (A+B)\nb.Cube of (A+B)");
             choice3=getche();
-                do{
+                do{ //Loop for choice3
                     switch(choice3)
                         case 'a':
                             printf("\nEnter 2 numbers");
@@ -54,7 +54,7 @@
          case '2': //Declared in trigonmetry.c
             printf("\n8.Sin Value\n9.Cos Value\n10.Tan Value");
             choice5=getche();
-                do{
+                do{ //Loop for choice5
                     switch(choice5)
                         case '8':
                             printf("Enter the degree");
@@ -107,7 +107,7 @@
           case '4': //Declared in arithmetic.c
             printf("\n6.Sum\n7.Substraction\n8.Multiply\n9.Division");
             choice4=getche();
-                do{
+                do{ //Loop for choice4
                     switch(choice4)
                         case '6':
                             printf("\nEnter two numbers");
