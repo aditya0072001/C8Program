@@ -7,7 +7,7 @@
  int main()
  {
      //choices
-     int choice,choice2,choice3,choice4,a,b,c;
+     int choice,choice2,choice3,choice4,choice5,a,b,c;
      //Mensuration.c declaration
      int l,b; //Length and breath of rectangle
      int rarea,rperimeter;  //rectangle area and perimeter
@@ -23,6 +23,7 @@
      float a3,b3;
      //Trigometry.c declaration
      double si,cs,tn;
+     double degree;
     
 
      printf("\n1.Algebra\n2.Trignometry\n3.Mesuration\n4.Arithemetic");
@@ -51,7 +52,29 @@
                 }while((choice3<a)||(choice3>b));
           break;
          case '2': //Declared in trigonmetry.c
-            printf("\n8.");
+            printf("\n8.Sin Value\n9.Cos Value\n10.Tan Value");
+            choice5=getche();
+                do{
+                    switch(choice5)
+                        case '8':
+                            printf("Enter the degree");
+                            scanf("%lf",&degree);
+                            si=sin(degree);
+                            printf("Answer is %lf",si);
+                            break;
+                        case '9':
+                            printf("Enter the degree");
+                            scanf("%lf",&degree);
+                            cs=cos(degree);
+                            printf("Answer is %lf",cs);
+                            break;
+                        case '10':
+                            printf("Enter the degree");
+                            scanf("%lf",&degree);
+                            tn=tan(degree);
+                            printf("Answer is %lf",tn);
+                            break;    
+                }while((choice5<8)||(choice5>10));
           break;
          case '3': //Declared in mesuration.c
             printf("\nA.RectangleOperations\nB.SquareOperations\nC.RhombusOperations");
