@@ -22,7 +22,7 @@
      int add,minus,mul,div;
      float a3,b3;
      //Trigometry.c declaration
-     int 
+     double si,cs,tn;
     
 
      printf("\n1.Algebra\n2.Trignometry\n3.Mesuration\n4.Arithemetic");
@@ -51,7 +51,7 @@
                 }while((choice3<a)||(choice3>b));
           break;
          case '2': //Declared in trigonmetry.c
-            printf("");
+            printf("\n8.");
           break;
          case '3': //Declared in mesuration.c
             printf("\nA.RectangleOperations\nB.SquareOperations\nC.RhombusOperations");
