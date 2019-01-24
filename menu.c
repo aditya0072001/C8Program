@@ -17,7 +17,7 @@
      //Algebra.c declaration
      int aplusbs; //a+b square
      int aplusbc; //a+b cube
-     //Arithmetic.c declaration
+     //Arithmetic.c declaration here
      int a2,b2;
      int add,minus,mul,div;
      float a3,b3;
