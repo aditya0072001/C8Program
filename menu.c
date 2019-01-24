@@ -127,7 +127,7 @@
                             mul=multiply(a2,b2);
                             printf("\nAnswer is %d",mul);
                             break;
-                        case '9':
+                        case '0':
                             printf("\nEnter two numbers");
                             scanf("%f%f",&a3,&b3);
                             div=divison(a3,b3);
