@@ -105,7 +105,7 @@
             }while((choice2<'A')||(choice2>'C'));      
           break;
           case '4': //Declared in arithmetic.c
-            printf("\n6.Sum\n7.Substraction\n8.Multiply\n9.Division");
+            printf("\n6.Sum\n7.Substraction\n8.Multiply\n.0Division");
             choice4=getche();
                 do{ //Loop for choice4
                     switch(choice4)
@@ -134,7 +134,7 @@
                             printf("\nAnswer is %d",div);
                             break;    
 
-                }while((choice4<6)||(choice4>9));
+                }while((choice4<6)||(choice4>0));
                
      }
     }while((choice<'1')||(choice>'4'));
