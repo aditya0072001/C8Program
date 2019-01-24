@@ -15,7 +15,7 @@
 
      printf("\n1.Algebra\n2.Trignometry\n3.Mesuration");
      choice=getche();
-
+    do{
      switch(choice)
      {
          case '1':  //Declared in algebra.c
@@ -27,6 +27,7 @@
          case '3': //Declared in mesuration.c
             printf("\nA.RectangleOperations\nB.SquareOperations\nC.RhombusOperations");
             choice2=getche();
+            do{
                 switch(choice2)
                     case 'A':
                         printf("\nEnter the length and breath of rectangle");
@@ -48,9 +49,11 @@
                         rharea=arearhombus(d1rhombus,d2rhombus);
                         rhperimeter=perimeterrhombus(srhombus);
                         printf("\nArea =%d and Perimeter =%d",rharea,rhperimeter);
-                        break;        
+                        break;  
+            }while((choice2='A')||(choice2='c'));      
           break;
                
      }
+    }while((choice='1')||(choice='3'));
      
  }
