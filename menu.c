@@ -6,7 +6,8 @@
 #include"arithmetic.c"
  int main()
  {
-     int choice,choice2,choice3,a,b,c;
+     //choices
+     int choice,choice2,choice3,choice4,a,b,c;
      //Mensuration.c declaration
      int l,b; //Length and breath of rectangle
      int rarea,rperimeter;  //rectangle area and perimeter
@@ -16,6 +17,10 @@
      //Algebra.c declaration
      int aplusbs; //a+b square
      int aplusbc; //a+b cube
+     //Arithmetic.c declaration
+     int a2,b2;
+     int add,minus,mul,div;
+     float a3,b3;
     
 
      printf("\n1.Algebra\n2.Trignometry\n3.Mesuration\n4.Arithemetic");
@@ -75,7 +80,36 @@
             }while((choice2<'A')||(choice2>'C'));      
           break;
           case '4': //Declared in arithmetic.c
-            printf("");
+            printf("\n6.Sum\n7.Substraction\n8.Multiply\n9.Division");
+            choice4=getche();
+                do{
+                    switch(choice4)
+                        case '6':
+                            printf("\nEnter two numbers");
+                            scanf("%d%d",&a2,&b2);
+                            add=sum(a2,b2);
+                            printf("\nAnswer is %d",sum);
+                            break;
+                        case '7':
+                            printf("\nEnter two numbers");
+                            scanf("%d%d",&a2,&b2);
+                            minus=substract(a2,b2);
+                            printf("\nAnswer is %d",minus);
+                            break;
+                        case '8':
+                            printf("\nEnter two numbers");
+                            scanf("%d%d",&a2,&b2);
+                            mul=multiply(a2,b2);
+                            printf("\nAnswer is %d",mul);
+                            break;
+                        case '9':
+                            printf("\nEnter two numbers");
+                            scanf("%f%f",&a3,&b3);
+                            div=divison(a3,b3);
+                            printf("\nAnswer is %d",div);
+                            break;    
+
+                }while((choice4<6)||(choice4>9));
                
      }
     }while((choice<'1')||(choice>'4'));
