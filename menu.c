@@ -21,6 +21,8 @@
      int a2,b2;
      int add,minus,mul,div;
      float a3,b3;
+     //Trigometry.c declaration
+     int 
     
 
      printf("\n1.Algebra\n2.Trignometry\n3.Mesuration\n4.Arithemetic");

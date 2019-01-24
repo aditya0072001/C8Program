@@ -2,16 +2,14 @@
 #include<math.h>
 int sin(double degree)
 {
-    int degree,answer;
-
+ double answer;
     answer=sin(degree);
-
     return answer;
 }
 
 int cos(double degree)
 {
-    int degree,answer;
+    double answer;
 
     answer=cos(degree);
 
@@ -20,7 +18,7 @@ int cos(double degree)
 
 int tan(double degree)
 {
-    int degree,answer;
+   double answer;
 
     answer=tan(degree);
 
