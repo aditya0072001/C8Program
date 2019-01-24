@@ -22,7 +22,7 @@
             printf("");
           break;
          case '2': //Declared in trigonmetry.c
-
+            printf("");
           break;
          case '3': //Declared in mesuration.c
             printf("\nA.RectangleOperations\nB.SquareOperations\nC.RhombusOperations");
