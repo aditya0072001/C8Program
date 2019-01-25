@@ -105,36 +105,36 @@
             }while((choice2<'A')||(choice2>'C'));      
           break;
           case '4': //Declared in arithmetic.c
-            printf("\n6.Sum\n7.Substraction\n8.Multiply\n.0Division");
+            printf("\ne.Sum\nf.Substraction\ng.Multiply\nh.Division");
             choice4=getche();
                 do{ //Loop for choice4
                     switch(choice4)
-                        case '6':
+                        case 'e':
                             printf("\nEnter two numbers");
                             scanf("%d%d",&a2,&b2);
                             add=sum(a2,b2);
                             printf("\nAnswer is %d",sum);
                             break;
-                        case '7':
+                        case 'f':
                             printf("\nEnter two numbers");
                             scanf("%d%d",&a2,&b2);
                             minus=substract(a2,b2);
                             printf("\nAnswer is %d",minus);
                             break;
-                        case '8':
+                        case 'h':
                             printf("\nEnter two numbers");
                             scanf("%d%d",&a2,&b2);
                             mul=multiply(a2,b2);
                             printf("\nAnswer is %d",mul);
                             break;
-                        case '0':
+                        case 'g':
                             printf("\nEnter two numbers");
                             scanf("%f%f",&a3,&b3);
                             div=divison(a3,b3);
                             printf("\nAnswer is %d",div);
                             break;    
 
-                }while((choice4<6)||(choice4>0));
+                }while((choice4<'e')||(choice4>'g'));
                
      }
     }while((choice<'1')||(choice>'4'));
