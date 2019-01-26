@@ -24,23 +24,23 @@ int lcmthree(int n1,int n2,int n3)
 
 }
 
-int sum(int a,int b)
+int sum(int n1,int n2)
 {
-    return a+b;
+    return n1+n2;
 }
 
-int substract(int a,int b)
+int substract(int n1,int n2)
 {
-    return a-b;
+    return n1-n2;
 }
 
-int multiply(int a,int b)
+int multiply(int n1,int n2)
 {
-    return a*b;
+    return n1*n2;
 }
 
-float divison(float a,float b)
+float divison(float n1,float n2)
 {
-    return a/b;
+    return n1/n2;
 }
 
