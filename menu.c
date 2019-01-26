@@ -1,15 +1,15 @@
 #include<stdio.h>
 #include<conio.h>
-#include"Algebra.c"
-#include"mesuration.c"
-#include"trigometry.c"
-#include"arithmetic.c"
+#include"Algebra.h"
+#include"mesuration.h"
+#include"trigometry.h"
+#include"arithmetic.h"
  int main()
  {
      //choices
      int choice,choice2,choice3,choice4,choice5,a,b,c;
      //Mensuration.c declaration
-     int l,b; //Length and breath of rectangle
+     int l,br; //Length and breath of rectangle
      int rarea,rperimeter;  //rectangle area and perimeter
      int sqside,sarea,sperimeter;   //square side,area and perimeter
      int srhombus,d1rhombus,d2rhombus;  //Rhombus side digonals
@@ -83,9 +83,9 @@
                 switch(choice2)
                     case 'A':
                         printf("\nEnter the length and breath of rectangle");
-                        scanf("%d%d",&l,&b);
-                        rarea=arearectangle(l,b);
-                        rperimeter=perimeterrectangle(l,b);
+                        scanf("%d%d",&l,&br);
+                        rarea=arearectangle(l,br);
+                        rperimeter=perimeterrectangle(l,br);
                         printf("\nArea =%d and Perimeter =%d",rarea,rperimeter);
                         break;
                     case 'B':
@@ -113,7 +113,7 @@
                             printf("\nEnter two numbers");
                             scanf("%d%d",&a2,&b2);
                             add=sum(a2,b2);
-                            printf("\nAnswer is %d",sum);
+                            printf("\nAnswer is %d",add);
                             break;
                         case 'f':
                             printf("\nEnter two numbers");
