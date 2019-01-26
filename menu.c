@@ -42,14 +42,16 @@
                             aplusbs=aplusbsqr(a,b);
                             printf("\nAnswer is %d",aplusbs);
                             getch();
-                            break;
+                            break;  
                         case 'b':
                             printf("\nEnter 2 numbers \t:");
                             scanf("%d%d",&a,&b);
                             aplusbc=aplusbcube(a,b);
                             printf("\nAnswer is %d",aplusbc);
                             getch();
-                            break;    
+                            break; 
+                        default:
+                            printf("invalid input, please type again:");       
 
                 }while((choice3<a)||(choice3>b));
           break;
@@ -78,7 +80,9 @@
                             tn=tan(degree);
                             printf("Answer is %lf",tn);
                             getch();
-                            break;    
+                            break;
+                        default:
+                            printf("invalid input, please type again:");    
                 }while((choice5<'i')||(choice5>'k'));
           break;
          case '3': //Declared in mesuration.c
@@ -109,7 +113,9 @@
                         rhperimeter=perimeterrhombus(srhombus);
                         printf("\nArea =%d and Perimeter =%d",rharea,rhperimeter);
                         getch();
-                        break;  
+                        break;
+                    default:
+                        printf("invalid input, please type again:");      
             }while((choice2<'A')||(choice2>'C'));      
           break;
           case '4': //Declared in arithmetic.c
@@ -144,7 +150,9 @@
                             div=divison(a3,b3);
                             printf("\nAnswer is %d",div);
                             getch();
-                            break;    
+                            break;
+                        default:
+                            printf("\nInvalid input, please type again:");        
 
                 }while((choice4<'e')||(choice4>'g'));
                
