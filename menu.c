@@ -7,7 +7,11 @@
  int main()
  {
      //choices
-     int choice,choice2,choice3,choice4,choice5,a,b,c;
+     int choice,a,b,c;
+     char choice5;
+     char choice2;
+     char choice3;
+     char choice4;
      //Mensuration.c declaration
      int l,br; //Length and breath of rectangle
      int rarea,rperimeter;  //rectangle area and perimeter
@@ -21,7 +25,7 @@
      int a2,b2;
      int add,minus,mul,div;
      float a3,b3;
-     //Trigometry.c declaration
+     //Trigometry.c declaration1
      double si,cs,tn;
      double degree;
     
@@ -42,14 +46,14 @@
                             scanf("%d%d",&a,&b);
                             aplusbs=aplusbsqr(a,b);
                             printf("\nAnswer is %d \n Press Esc for exit" ,aplusbs);
-                            
+                            choice3=getch();
                             break;  
                         case 'b':
                             printf("\nEnter 2 numbers \t:");
                             scanf("%d%d",&a,&b);
                             aplusbc=aplusbcube(a,b);
                             printf("\nAnswer is %d \n Press Esc for exit ",aplusbc);
-                        
+                            choice3=getch();
                             break; 
 
                     }              
@@ -67,21 +71,21 @@
                             scanf("%lf",&degree);
                             si=sin(degree);
                             printf("Answer is %lf \n Press Esc for exit ",si);
-                            
+                            choice5=getch();
                             break;
                         case 'j':
                             printf("Enter the degree \t:");
                             scanf("%lf",&degree);
                             cs=cos(degree);
                             printf("Answer is %lf \n Press Esc for exit ",cs);
-                            
+                            choice5=getch();
                             break;
                         case 'k':
                             printf("Enter the degree \t:");
                             scanf("%lf",&degree);
                             tn=tan(degree);
                             printf("Answer is %lf \n Press Esc for exit ",tn);
-                            
+                            choice5=getch();
                             break;
                     }     
                 }while(((choice5<'i')||(choice5>'k'))&&choice4=='27');
@@ -97,7 +101,7 @@
                         rarea=arearectangle(l,br);
                         rperimeter=perimeterrectangle(l,br);
                         printf("\nArea =%d and Perimeter =%d \n Press Esc for exit ",rarea,rperimeter);
-                        getch();
+                        choice2=getch();
                         break;
                     case 'B':
                         printf("\nEnter side of Square \t:");
@@ -105,7 +109,7 @@
                         sarea=areasquare(sqside);
                         sperimeter=perimetersquare(sqside);
                         printf("\nArea =%d and Perimeter =%d \n Press Esc for exit ",sarea,sperimeter);
-                        
+                        choice2=getch();
                         break;
                     case 'C':
                         printf("\nEnter the diagonals and side of rhombus \t:");
@@ -113,7 +117,7 @@
                         rharea=arearhombus(d1rhombus,d2rhombus);
                         rhperimeter=perimeterrhombus(srhombus);
                         printf("\nArea =%d and Perimeter =%d \n Press Esc for exit ",rharea,rhperimeter);
-                        
+                        choice2=getch();
                         break;
                 }         
             }while(((choice2<'A')||(choice2>'C'))&&choice4=='27');      
@@ -129,28 +133,28 @@
                             scanf("%d%d",&a2,&b2);
                             add=sum(a2,b2);
                             printf("\nAnswer is %d \n Press Esc for exit ",add);
-                           
+                            choice4=getch();
                             break;
                         case 'f':
                             printf("\nEnter two numbers \t:");
                             scanf("%d%d",&a2,&b2);
                             minus=substract(a2,b2);
                             printf("\nAnswer is %d \n Press Esc for exit ",minus);
-                            
+                            choice4=getch();
                             break;
                         case 'h':
                             printf("\nEnter two numbers \t:");
                             scanf("%d%d",&a2,&b2);
                             mul=multiply(a2,b2);
                             printf("\nAnswer is %d \n Press Esc for exit ",mul);
-                            
+                            choice4=getch();
                             break;
                         case 'g':
                             printf("\nEnter two numbers \t:");
                             scanf("%f%f",&a3,&b3);
                             div=divison(a3,b3);
                             printf("\nAnswer is %d \n Press Esc for exit ",div);
-                            
+                            choice4=getch();
                             break;
                     }          
 
