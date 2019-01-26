@@ -26,13 +26,13 @@
      double degree;
     
 
-     printf("\n1.Algebra\n2.Trignometry\n3.Mesuration\n4.Arithemetic \t:");
+     printf("\nThis program does the following functions\n1.Algebra\n2.Trignometry\n3.Mesuration\n4.Arithemetic\n Press Esc for exit \t:");
      choice=getche();
     do{ //loop for repeation of menu of choice1
      switch(choice)
      {
          case '1':  //Declared in algebra.c
-            printf("\na.Square of (A+B) \t:\nb.Cube of (A+B) \t:");
+            printf("\na.Square of (A+B) \t:\nb.Cube of (A+B) \n Press Esc for exit  \n");
             choice3=getche();
                 do{ //Loop for choice3
                     switch(choice3)
@@ -41,24 +41,23 @@
                             printf("\nEnter 2 numbers \t:");
                             scanf("%d%d",&a,&b);
                             aplusbs=aplusbsqr(a,b);
-                            printf("\nAnswer is %d",aplusbs);
+                            printf("\nAnswer is %d \n Press Esc for exit" ,aplusbs);
                             getch();
                             break;  
                         case 'b':
                             printf("\nEnter 2 numbers \t:");
                             scanf("%d%d",&a,&b);
                             aplusbc=aplusbcube(a,b);
-                            printf("\nAnswer is %d",aplusbc);
+                            printf("\nAnswer is %d \n Press Esc for exit ",aplusbc);
                             getch();
                             break; 
-                        default:
-                            printf("invalid input, please type again:"); 
+
                     }              
 
-                }while((choice3<a)||(choice3>b));
+                }while(((choice3<a)||(choice3>b))&&choice4=='27');
           
          case '2': //Declared in trigonmetry.c
-            printf("\ni.Sin Value\nj.Cos Value\nk.Tan Value \t:");
+            printf("\ni.Sin Value\nj.Cos Value\nk.Tan Value \n Press Esc for exit \t:");
             choice5=getche();
                 do{ //Loop for choice5
                     switch(choice5)
@@ -67,27 +66,27 @@
                             printf("Enter the degree \t:");
                             scanf("%lf",&degree);
                             si=sin(degree);
-                            printf("Answer is %lf",si);
+                            printf("Answer is %lf \n Press Esc for exit ",si);
                             getch();
                             break;
                         case 'j':
                             printf("Enter the degree \t:");
                             scanf("%lf",&degree);
                             cs=cos(degree);
-                            printf("Answer is %lf",cs);
+                            printf("Answer is %lf \n Press Esc for exit ",cs);
                             getch();
                             break;
                         case 'k':
                             printf("Enter the degree \t:");
                             scanf("%lf",&degree);
                             tn=tan(degree);
-                            printf("Answer is %lf",tn);
+                            printf("Answer is %lf \n Press Esc for exit ",tn);
                             getch();
                             break;
                     }     
-                }while((choice5<'i')||(choice5>'k'));
+                }while(((choice5<'i')||(choice5>'k'))&&choice4=='27');
          case '3': //Declared in mesuration.c
-            printf("\nA.RectangleOperations\nB.SquareOperations\nC.RhombusOperations \t:");
+            printf("\nA.RectangleOperations\nB.SquareOperations\nC.RhombusOperations\n Press Esc for exit \t:");
             choice2=getche();
             do{ //loop for repeation of menu of choice2
                 switch(choice2)
@@ -97,7 +96,7 @@
                         scanf("%d%d",&l,&br);
                         rarea=arearectangle(l,br);
                         rperimeter=perimeterrectangle(l,br);
-                        printf("\nArea =%d and Perimeter =%d",rarea,rperimeter);
+                        printf("\nArea =%d and Perimeter =%d \n Press Esc for exit ",rarea,rperimeter);
                         getch();
                         break;
                     case 'B':
@@ -105,7 +104,7 @@
                         scanf("%d",&sqside);
                         sarea=areasquare(sqside);
                         sperimeter=perimetersquare(sqside);
-                        printf("\nArea =%d and Perimeter =%d",sarea,sperimeter);
+                        printf("\nArea =%d and Perimeter =%d \n Press Esc for exit ",sarea,sperimeter);
                         getch();
                         break;
                     case 'C':
@@ -113,14 +112,14 @@
                         scanf("%d%d%d",&d1rhombus,&d2rhombus,&srhombus);
                         rharea=arearhombus(d1rhombus,d2rhombus);
                         rhperimeter=perimeterrhombus(srhombus);
-                        printf("\nArea =%d and Perimeter =%d",rharea,rhperimeter);
+                        printf("\nArea =%d and Perimeter =%d \n Press Esc for exit ",rharea,rhperimeter);
                         getch();
                         break;
                 }         
-            }while((choice2<'A')||(choice2>'C'));      
+            }while(((choice2<'A')||(choice2>'C'))&&choice4=='27');      
           
           case '4': //Declared in arithmetic.c
-            printf("\ne.Sum\nf.Substraction\ng.Multiply\nh.Division \t:");
+            printf("\ne.Sum\nf.Substraction\ng.Multiply\nh.Division\n Press Esc for exit  \t:");
             choice4=getche();
                 do{ //Loop for choice4
                     switch(choice4)
@@ -129,36 +128,36 @@
                             printf("\nEnter two numbers \t:");
                             scanf("%d%d",&a2,&b2);
                             add=sum(a2,b2);
-                            printf("\nAnswer is %d",add);
+                            printf("\nAnswer is %d \n Press Esc for exit ",add);
                             getch();
                             break;
                         case 'f':
                             printf("\nEnter two numbers \t:");
                             scanf("%d%d",&a2,&b2);
                             minus=substract(a2,b2);
-                            printf("\nAnswer is %d",minus);
+                            printf("\nAnswer is %d \n Press Esc for exit ",minus);
                             getch();
                             break;
                         case 'h':
                             printf("\nEnter two numbers \t:");
                             scanf("%d%d",&a2,&b2);
                             mul=multiply(a2,b2);
-                            printf("\nAnswer is %d",mul);
+                            printf("\nAnswer is %d \n Press Esc for exit ",mul);
                             getch();
                             break;
                         case 'g':
                             printf("\nEnter two numbers \t:");
                             scanf("%f%f",&a3,&b3);
                             div=divison(a3,b3);
-                            printf("\nAnswer is %d",div);
+                            printf("\nAnswer is %d \n Press Esc for exit ",div);
                             getch();
                             break;
                     }          
 
-                }while((choice4<'e')||(choice4>'g'));
+                }while(((choice4<'e')||(choice4>'g'))&&choice4=='27');
               
      }
-    }while((choice<'1')||(choice>'4'));
+    }while(((choice<'1')||(choice>'4'))&&choice4=='27');
      
    return 0;   
  }
