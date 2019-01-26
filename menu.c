@@ -52,29 +52,29 @@
                 }while((choice3<a)||(choice3>b));
           break;
          case '2': //Declared in trigonmetry.c
-            printf("\n8.Sin Value\n9.Cos Value\n10.Tan Value");
+            printf("\ni.Sin Value\nj.Cos Value\nk.Tan Value");
             choice5=getche();
                 do{ //Loop for choice5
                     switch(choice5)
-                        case '8':
+                        case 'i':
                             printf("Enter the degree");
                             scanf("%lf",&degree);
                             si=sin(degree);
                             printf("Answer is %lf",si);
                             break;
-                        case '9':
+                        case 'j':
                             printf("Enter the degree");
                             scanf("%lf",&degree);
                             cs=cos(degree);
                             printf("Answer is %lf",cs);
                             break;
-                        case '10':
+                        case 'k':
                             printf("Enter the degree");
                             scanf("%lf",&degree);
                             tn=tan(degree);
                             printf("Answer is %lf",tn);
                             break;    
-                }while((choice5<8)||(choice5>10));
+                }while((choice5<'i')||(choice5>'k'));
           break;
          case '3': //Declared in mesuration.c
             printf("\nA.RectangleOperations\nB.SquareOperations\nC.RhombusOperations");
