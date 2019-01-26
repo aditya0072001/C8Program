@@ -41,12 +41,14 @@
                             scanf("%d%d",&a,&b);
                             aplusbs=aplusbsqr(a,b);
                             printf("\nAnswer is %d",aplusbs);
+                            getch();
                             break;
                         case 'b':
                             printf("\nEnter 2 numbers");
                             scanf("%d%d",&a,&b);
                             aplusbc=aplusbcube(a,b);
                             printf("\nAnswer is %d",aplusbc);
+                            getch();
                             break;    
 
                 }while((choice3<a)||(choice3>b));
@@ -61,18 +63,21 @@
                             scanf("%lf",&degree);
                             si=sin(degree);
                             printf("Answer is %lf",si);
+                            getch();
                             break;
                         case 'j':
                             printf("Enter the degree");
                             scanf("%lf",&degree);
                             cs=cos(degree);
                             printf("Answer is %lf",cs);
+                            getch();
                             break;
                         case 'k':
                             printf("Enter the degree");
                             scanf("%lf",&degree);
                             tn=tan(degree);
                             printf("Answer is %lf",tn);
+                            getch();
                             break;    
                 }while((choice5<'i')||(choice5>'k'));
           break;
@@ -87,6 +92,7 @@
                         rarea=arearectangle(l,br);
                         rperimeter=perimeterrectangle(l,br);
                         printf("\nArea =%d and Perimeter =%d",rarea,rperimeter);
+                        getch();
                         break;
                     case 'B':
                         printf("\nEnter side of Square");
@@ -94,6 +100,7 @@
                         sarea=areasquare(sqside);
                         sperimeter=perimetersquare(sqside);
                         printf("\nArea =%d and Perimeter =%d",sarea,sperimeter);
+                        getch();
                         break;
                     case 'C':
                         printf("\nEnter the diagonals and side of rhombus");
@@ -101,6 +108,7 @@
                         rharea=arearhombus(d1rhombus,d2rhombus);
                         rhperimeter=perimeterrhombus(srhombus);
                         printf("\nArea =%d and Perimeter =%d",rharea,rhperimeter);
+                        getch();
                         break;  
             }while((choice2<'A')||(choice2>'C'));      
           break;
@@ -114,24 +122,28 @@
                             scanf("%d%d",&a2,&b2);
                             add=sum(a2,b2);
                             printf("\nAnswer is %d",add);
+                            getch();
                             break;
                         case 'f':
                             printf("\nEnter two numbers");
                             scanf("%d%d",&a2,&b2);
                             minus=substract(a2,b2);
                             printf("\nAnswer is %d",minus);
+                            getch();
                             break;
                         case 'h':
                             printf("\nEnter two numbers");
                             scanf("%d%d",&a2,&b2);
                             mul=multiply(a2,b2);
                             printf("\nAnswer is %d",mul);
+                            getch();
                             break;
                         case 'g':
                             printf("\nEnter two numbers");
                             scanf("%f%f",&a3,&b3);
                             div=divison(a3,b3);
                             printf("\nAnswer is %d",div);
+                            getch();
                             break;    
 
                 }while((choice4<'e')||(choice4>'g'));
