@@ -27,7 +27,7 @@
      double si,cs,tn;
      double degree;
     
-
+     printf("\n::::::It's not who I am underneath, but what I do that defines me:::::\n");
      printf("\nThis program does the following functions\n1.Algebra\n2.Trignometry\n3.Mesuration\n4.Arithemetic\n\nPress Esc for exit \t:");
      choice=getche();
     do{ //loop for repeation of menu of choice1
