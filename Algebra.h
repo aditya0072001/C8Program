@@ -1,19 +1,19 @@
 #include<stdio.h>
 #include<math.h>
-int aplusbsqr(int a,int b)
+int aplusbsqr(int n1,int n2)
 {
-    int a,b,answer;
+    int answer;
 
-    answer=pow(a,2)+pow(b,2)+2*a*b;
+    answer=pow(n1,2)+pow(n2,2)+2*n1*n2;
 
 return answer;
 }
 
-int aplusbcube(int a,int b)
+int aplusbcube(int n1,int n2)
 {
-    int a,b,answer;
+    int answer;
 
-    answer=pow(a,3)+pow(b,3)+3*pow(a,2)*b+3*a*pow(b,2);
+    answer=pow(n1,3)+pow(n2,3)+3*pow(n1,2)*n2+3*n1*pow(n2,2);
     
  return answer;
 }
