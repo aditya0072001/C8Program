@@ -36,6 +36,7 @@
             choice3=getche();
                 do{ //Loop for choice3
                     switch(choice3)
+                    {
                         case 'a':
                             printf("\nEnter 2 numbers \t:");
                             scanf("%d%d",&a,&b);
@@ -51,15 +52,17 @@
                             getch();
                             break; 
                         default:
-                            printf("invalid input, please type again:");       
+                            printf("invalid input, please type again:"); 
+                    }              
 
                 }while((choice3<a)||(choice3>b));
-          break;
+          
          case '2': //Declared in trigonmetry.c
             printf("\ni.Sin Value\nj.Cos Value\nk.Tan Value \t:");
             choice5=getche();
                 do{ //Loop for choice5
                     switch(choice5)
+                    {
                         case 'i':
                             printf("Enter the degree \t:");
                             scanf("%lf",&degree);
@@ -81,15 +84,14 @@
                             printf("Answer is %lf",tn);
                             getch();
                             break;
-                        default:
-                            printf("invalid input, please type again:");    
+                    }     
                 }while((choice5<'i')||(choice5>'k'));
-          break;
          case '3': //Declared in mesuration.c
             printf("\nA.RectangleOperations\nB.SquareOperations\nC.RhombusOperations \t:");
             choice2=getche();
             do{ //loop for repeation of menu of choice2
                 switch(choice2)
+                {
                     case 'A':
                         printf("\nEnter the length and breath of rectangle \t:");
                         scanf("%d%d",&l,&br);
@@ -114,15 +116,15 @@
                         printf("\nArea =%d and Perimeter =%d",rharea,rhperimeter);
                         getch();
                         break;
-                    default:
-                        printf("invalid input, please type again:");      
+                }         
             }while((choice2<'A')||(choice2>'C'));      
-          break;
+          
           case '4': //Declared in arithmetic.c
             printf("\ne.Sum\nf.Substraction\ng.Multiply\nh.Division \t:");
             choice4=getche();
                 do{ //Loop for choice4
                     switch(choice4)
+                    {
                         case 'e':
                             printf("\nEnter two numbers \t:");
                             scanf("%d%d",&a2,&b2);
@@ -151,11 +153,10 @@
                             printf("\nAnswer is %d",div);
                             getch();
                             break;
-                        default:
-                            printf("\nInvalid input, please type again:");        
+                    }          
 
                 }while((choice4<'e')||(choice4>'g'));
-               
+              
      }
     }while((choice<'1')||(choice>'4'));
      
